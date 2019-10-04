@@ -1,9 +1,7 @@
-const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");
-
-const game = new Game(ctx)
+const game = new Game()
 
 window.onload = function() {
 
-  game.run()
+  //game.createBoard()
+  game.createMatrix(10,10)
 }

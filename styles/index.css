@@ -1,3 +1,11 @@
-canvas {
-  border: 1px dotted;
+body {
+  background-color: lightskyblue;
 }
+
+td{
+  /*background-color: red;*/
+  border:1px solid black;
+  width: 30em;
+  height: 4em;
+}
+
