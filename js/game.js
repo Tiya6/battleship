@@ -6,14 +6,14 @@ class Game {
      this.myGrid = myGrid
    }*/
  
-   createMatrix(columns, rows) {    
+   /*createMatrix(columns, rows) {    
      var matrix = [];
      var table = document.createElement("table");
-     table.className='tabla'
+     table.className='tabla'*/
      /*for (var i = 0; i < columns; i++) {
        matrix[i] = new Array(rows);
      }*/
-     for(let i = 0; i < columns; i++) {
+     /*for(let i = 0; i < columns; i++) {
        var tr = document.createElement('tr');
        matrix[i]= []
        tr.className='column'+i
@@ -30,7 +30,7 @@ class Game {
      }
      document.body.appendChild(table)
      console.log(matrix)    
-   }
+   }*/
    
    /*paintMatrix( ){
      const myGrid = createMatrix(10, 10)

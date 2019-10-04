@@ -1,11 +1,11 @@
 body {
-  background-color: lightskyblue;
+  background-color: red;
 }
 
-td{
-  /*background-color: red;*/
-  border:1px solid black;
+div{
+  background-color: white;
+  /*border:1px solid black;
   width: 30em;
-  height: 4em;
+  height: 4em;*/
 }
 
