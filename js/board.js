@@ -24,4 +24,13 @@ class Board {
   } 
     document.body.appendChild(divy)
   }
+
+  classes(){
+  const compare= document.getElementsByTagName('div')
+  if(compare.innerText === 'z'){
+    compare.setAttribute("class","gamba")
+  } else if( compare.innerText === 'b') {
+    compare.className = 'boat'
+  }
+  }
 }

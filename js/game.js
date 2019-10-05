@@ -5,9 +5,18 @@ class Game {
     board.paintBoard(arr)
   }
   
-  drawBoat(arr1,arr){
-    let boat = new Boat()
-    boat.drawBoat(arr1,arr)
+  applyStyles(arr){
+    let board = new Board()
+    board.classes(arr)
+  }
+
+  clickando(){
+    const te = document.getElementById("yo")
+    document.ge
+    te.onclick = function(){
+    te.innerHTML = "YOU CLICKED ME!";
+    }
+   
   }
 
  }
