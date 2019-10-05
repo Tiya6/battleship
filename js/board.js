@@ -19,9 +19,9 @@ class Board {
           if(column.innerText === " "){
             column.className='water-tile column'
             } else if(column.innerText === "b"){
-              column.className='water-tile column'
+              column.className='water-tile column boat'
               column.onclick = function(e){
-              e.currentTarget.className = 'water-tile column boat'}
+              e.currentTarget.className = 'water-tile column boom'}
             }
           row.appendChild(column);          
       }
