@@ -2,27 +2,29 @@ const game = new Game()
 
 /*const boardy = [
   [null,null,null,null,null,null,null,null,null,null],
+  [null,null,null,null,null,null,null,'b','b','b'],
   [null,null,null,null,null,null,null,null,null,null],
-  [null,null,null,null,null,null,null,null,null,null],
-  [null,null,null,null,null,null,null,null,null,null],
+  [null,null,null,'b','b','b',null,null,null,null],
   [null,null,null,null,null,null,null,null,null,null],
   [null,null,null,null,null,null,null,null,null,null],
   [null,null,null,null,null,null,null,null,null,null],
   [null,null,null,null,null,null,null,null,null,null],
   [null,null,null,null,null,null,null,null,null,null]
-  ,[null,null,null,null,null,null,null,null,null,null]]*/
-
+  ,[null,null,null,null,null,null,null,null,null,null]]
+*/
+  
+  
   const boardy = [
-    ['z','z','z','z','z','z','z','z','z','z'],
-    ['z','z','z','b','z','z','z','z','z','z'],
-    ['z','z','z','b','z','z','z','z','z','z'],
-    ['z','z','z','b','z','z','z','z','z','z'],
-    ['z','z','z','z','z','z','z','z','z','z'],
-    ['z','z','z','z','z','z','b','b','b','z'],
-    ['z','z','z','z','z','z','z','z','z','z'],
-    ['z','z','z','z','z','z','z','z','z','z'],
-    ['z','z','z','z','z','z','z','z','z','z'],
-    ['z','z','z','z','z','z','z','z','z','z']
+    [' ',' ',' ',' ',' ',' ',' ',' ',' ',' '],
+    [' ',' ',' ','b',' ',' ',' ',' ',' ',' '],
+    [' ',' ',' ','b',' ',' ',' ',' ',' ',' '],
+    [' ',' ',' ','b',' ',' ',' ',' ',' ',' '],
+    [' ',' ',' ',' ',' ',' ',' ',' ',' ',' '],
+    [' ',' ',' ',' ',' ',' ','b','b','b',' '],
+    [' ',' ',' ',' ',' ',' ',' ',' ',' ',' '],
+    [' ',' ',' ',' ',' ',' ',' ',' ',' ',' '],
+    [' ',' ',' ',' ',' ',' ',' ',' ',' ',' '],
+    [' ',' ',' ',' ',' ',' ',' ',' ',' ',' ']
   ]
 
 window.onload = function() {

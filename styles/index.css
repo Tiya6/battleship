@@ -1,29 +1,44 @@
 body {
   background-color: lightskyblue;
 }
+ 
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+div{
+  margin: 0 auto;
+  padding:0 auto;
+  width:51em;
+  height: 3.1em;
+}
 
 .column{
   display: inline-block;
-  /*visibility: hidden;*/
   width: 5em;
-  margin: auto;
-  text-align: left;
+  height:3em;
+  margin: 0 auto;
+  padding:0 auto;
+  text-align: center;
   background-color: lightblue;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .boat{
   display: inline-block;
-  /*visibility: hidden;*/
-  width: 5em;
-  margin: auto;
-  text-align: left;
+  width: 5em;  
+  height:3em;
+  margin: 0 auto;
+  padding:0 auto;
+  text-align: center;
   background-color: red;
-}
-
-.boom{
-  display: inline-block;
-  width: 5em;
-  margin: auto;
-  text-align: left;
-  background-color: green;
+  /*background-image: url("")*/;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }

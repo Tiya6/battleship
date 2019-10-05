@@ -3,13 +3,9 @@ class Boat {
     this.arr = arr;
   }
 
-
-  drawBoat(arr1,arr){
-    let divBoat = document.createElement('div');
-    divBoat.className = 'boat'
+  deleteBoat(){
     
-    arr1[3].splice(3,0,...arr)
-    //boardy[3].splice(3,0,...boatOne)
   }
+  
 
 }
