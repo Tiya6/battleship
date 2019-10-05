@@ -27,6 +27,5 @@ const game = new Game()
 
 window.onload = function() {
   game.drawBoard(boardy)
-  game.applyStyles(boardy)
   game.clickando()
 }

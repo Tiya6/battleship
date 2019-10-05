@@ -4,6 +4,7 @@ body {
 
 .column{
   display: inline-block;
+  /*visibility: hidden;*/
   width: 5em;
   margin: auto;
   text-align: left;
@@ -12,8 +13,17 @@ body {
 
 .boat{
   display: inline-block;
+  /*visibility: hidden;*/
   width: 5em;
   margin: auto;
   text-align: left;
   background-color: red;
+}
+
+.boom{
+  display: inline-block;
+  width: 5em;
+  margin: auto;
+  text-align: left;
+  background-color: green;
 }

@@ -14,9 +14,12 @@ class Board {
       
       for(let j = 0; j < arr.length; j++) {
           // Corresponde a cada columna
-          var column = document.createElement('div')
-          column.className='water-tile column'
+          var column = document.createElement('div')          
           column.innerText = arr[i][j]
+          if(column.innerText === "z"){
+            column.className='water-tile column prueba'+j} else{
+              column.className='water-tile column boat'
+            }
           row.appendChild(column);          
       }
       divy.appendChild(row)
@@ -25,12 +28,5 @@ class Board {
     document.body.appendChild(divy)
   }
 
-  classes(){
-  const compare= document.getElementsByTagName('div')
-  if(compare.innerText === 'z'){
-    compare.setAttribute("class","gamba")
-  } else if( compare.innerText === 'b') {
-    compare.className = 'boat'
-  }
-  }
+  
 }

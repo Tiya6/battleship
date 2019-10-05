@@ -5,18 +5,18 @@ class Game {
     board.paintBoard(arr)
   }
   
-  applyStyles(arr){
-    let board = new Board()
-    board.classes(arr)
+  clickando(){
+    const te = document.getElementsByClassName('prueba9')    
+    te.array.forEach(element => {
+      element.onclick = function(e){
+
+        e.currentTarget.className = "water-tile column boom"
+      }
+    });
+    
+    
   }
 
-  clickando(){
-    const te = document.getElementById("yo")
-    document.ge
-    te.onclick = function(){
-    te.innerHTML = "YOU CLICKED ME!";
-    }
-   
-  }
+
 
  }
