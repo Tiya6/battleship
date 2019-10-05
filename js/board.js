@@ -1,4 +1,8 @@
 class Board {
+  constructor(row,column){
+    this.row = row
+    this.column = column
+  }
 
   paintBoard(arr){
     let divy = document.createElement('div')
@@ -6,18 +10,18 @@ class Board {
     
     for(let i = 0; i < arr.length; i++) {
       let row = document.createElement('div')
-      row.className='water-tile'
+      row.className='water-tile row'
+      
       for(let j = 0; j < arr.length; j++) {
           // Corresponde a cada columna
           var column = document.createElement('div')
-          column.className='water-tile'
+          column.className='water-tile column'
           column.innerText = arr[i][j]
-          row.appendChild(column);
-          divy.appendChild(row)
+          row.appendChild(column);          
       }
+      divy.appendChild(row)
       // Corresponde a cada fila     
   } 
-    console.log(divy)
-    return divy
+    document.body.appendChild(divy)
   }
 }

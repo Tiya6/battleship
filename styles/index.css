@@ -1,11 +1,19 @@
 body {
-  background-color: red;
+  background-color: lightskyblue;
 }
 
-div{
-  background-color: white;
-  /*border:1px solid black;
-  width: 30em;
-  height: 4em;*/
+.column{
+  display: inline-block;
+  width: 5em;
+  margin: auto;
+  text-align: left;
+  background-color: lightblue;
 }
 
+.boat{
+  display: inline-block;
+  width: 5em;
+  margin: auto;
+  text-align: left;
+  background-color: lightblue;
+}
