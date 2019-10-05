@@ -1,5 +1,8 @@
 body {
-  background-color: lightskyblue;
+  background-color: black;
+  background-image: url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/991980/358a386454e9a2ddc3d906fbab272767b54584c9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
  
 img{
