@@ -15,10 +15,13 @@ class Board {
       for(let j = 0; j < arr.length; j++) {
           // Corresponde a cada columna
           var column = document.createElement('div')          
-          column.innerText = arr[i][j]
+          column.innerText = arr[i][j]          
           if(column.innerText === "z"){
-            column.className='water-tile column prueba'+j} else{
-              column.className='water-tile column boat'
+            column.className='water-tile column'
+            } else if(column.innerText === "b"){
+              column.className='water-tile column'
+              column.onclick = function(e){
+              e.currentTarget.className = 'water-tile column boat'}
             }
           row.appendChild(column);          
       }
