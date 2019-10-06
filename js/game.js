@@ -1,12 +1,16 @@
 class Game {
 
-  drawBoard(arr){
-    let board = new Board()
-    board.paintBoard(arr)
+  constructor(){
+    this.board = new Board()
+    this.boat = new Boat()
   }
-  deleteBoat(){
-    let boat = new Boat()
-    boat.deleteBoat()
+
+  drawBoard(arr){
+    this.board.paintBoard(arr)
+  }
+
+  drawBoat(arr){
+    this.boat.paintBoat(arr)
   }
 
  }

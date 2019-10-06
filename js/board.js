@@ -1,4 +1,5 @@
 class Board {
+  
   constructor(row,column){
     this.row = row
     this.column = column
@@ -6,7 +7,7 @@ class Board {
 
   paintBoard(arr){
     let divy = document.createElement('div')
-    divy.className = 'water-tile div-style'
+    divy.className = 'background'
     
     for(let i = 0; i < arr.length; i++) {
       let row = document.createElement('div')
@@ -14,7 +15,7 @@ class Board {
       
       for(let j = 0; j < arr.length; j++) {
           // Corresponde a cada columna
-          var column = document.createElement('div')          
+          var column = document.createElement('span')          
           column.innerText = arr[i][j]          
           if(column.innerText === " "){
             column.className='water-tile column'

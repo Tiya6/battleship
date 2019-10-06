@@ -27,8 +27,11 @@ const game = new Game()
     [' ',' ',' ',' ',' ',' ',' ',' ',' ',' ']
   ]
 
+  const boaty= ['b','b','b']
+
 window.onload = function() {
   game.drawBoard(boardy)
-  game.deleteBoat()
-  
+  //game.drawBoat(boaty,boardy)
+  game.drawBoat(boaty,boardy)
+  game.drawBoat(boardy,boaty)
 }
