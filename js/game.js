@@ -9,8 +9,12 @@ class Game {
     this.board.paintBoard(arr)
   }
 
-  drawBoat(arr){
-    this.boat.paintBoat(arr)
+  drawBoat(arrBoard,arrBoat,x,y,direction){
+    this.boat.paintBoat(arrBoard,arrBoat,x,y,direction)
+  }
+  
+  deleteBoat(){
+    this.boat.deleteBoat()
   }
 
  }

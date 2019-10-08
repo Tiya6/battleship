@@ -26,12 +26,11 @@ const game = new Game()
     [' ',' ',' ',' ',' ',' ',' ',' ',' ',' '],
     [' ',' ',' ',' ',' ',' ',' ',' ',' ',' ']
   ]
+ 
+  const boaty= ['b','b','b','b']
 
-  const boaty= ['b','b','b']
 
-window.onload = function() {
+window.onload = function() {  
+  game.drawBoat(boardy,boaty,5,4,false)
   game.drawBoard(boardy)
-  //game.drawBoat(boaty,boardy)
-  game.drawBoat(boaty,boardy)
-  game.drawBoat(boardy,boaty)
 }
