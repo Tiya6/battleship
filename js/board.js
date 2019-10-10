@@ -1,36 +1,27 @@
 class Board {
-  
-  constructor(row,column){
-    this.row = row
-    this.column = column
+
+  constructor(board) {
+    this.board = board
+    this.base = document.getElementById('base')
   }
 
-  paintBoard(arr){
-    let divy = document.createElement('div')
-    divy.className = 'background'
-    
-    for(let i = 0; i < arr.length; i++) {
-      let row = document.createElement('div')
-      row.className='water-tile row'
-      
-      for(let j = 0; j < arr.length; j++) {
-          // Corresponde a cada columna
-          var column = document.createElement('span')          
-          column.innerText = arr[i][j]          
-          if(column.innerText === " "){
-            column.className='water-tile column'
-            } else if(column.innerText === "b"){
-              column.className='water-tile column boat'
-              column.onclick = function(e){
-              e.currentTarget.className = 'water-tile column boom'}
-            }
-          row.appendChild(column);          
+  createTile(x,y) {
+    let tile = document.createElement('span')
+    tile.className = `tile water-tile boat`
+    tile.id = `${x}-${y}`
+    return tile
+  }
+
+
+  draw() {
+    for(let i = -1; ++i < this.board.length;) {
+      for(let j = -1; ++j < this.board.length;) {
+        this.base.appendChild(this.createTile(i,j))
       }
-      divy.appendChild(row)
-      // Corresponde a cada fila     
-  } 
-    document.body.appendChild(divy)
+      let jump = document.createElement('div')
+      this.base.appendChild(jump)
+    }
   }
-
   
+
 }
