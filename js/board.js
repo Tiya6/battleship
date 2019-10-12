@@ -18,8 +18,8 @@ class Board {
       for(let j = -1; ++j < this.board.length;) {
         this.base.appendChild(this.createTile(i,j))
       }
-      let jump = document.createElement('div')
-      this.base.appendChild(jump)
+     // let jump = document.createElement('div')
+      //this.base.appendChild(jump)
     }
   }
   

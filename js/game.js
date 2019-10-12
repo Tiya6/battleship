@@ -3,7 +3,9 @@ class Game {
   constructor(){
     
     this.boardy = new Array(10).fill('')
-    
+    this.boaty = [
+      
+    ]
     this.boaty1 = [
       {i:1, j:1, touched: false},
       {i:1, j:2, touched: false},
@@ -34,7 +36,14 @@ class Game {
       {i:6, j:0, touched: false},
       
     ]
-
+    
+    this.boaty6 = [
+      {i:null, j:null, touched: false},
+      {i:null, j:null, touched: false},
+      {i:null, j:null, touched: false},
+      {i:null, j:null, touched: false},
+    ]
+    
     this.board = new Board(this.boardy)
     
     this.boat1 = new Boat(this.boaty1)
@@ -42,6 +51,8 @@ class Game {
     this.boat3 = new Boat(this.boaty3)
     this.boat4 = new Boat(this.boaty4)
     this.boat5 = new Boat(this.boaty5)
+    this.boat6 = new Boat(this.boaty6)
+
   }
 
   start() {
@@ -51,7 +62,7 @@ class Game {
     this.boat3.draw()
     this.boat4.draw()
     this.boat5.draw()
+    this.boat6.randomPosition()
   }
-
-
+  
  }
