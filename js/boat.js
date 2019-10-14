@@ -14,8 +14,8 @@ class Boat {
       spanElem.onclick = () => {
       spanElem.classList.add('little-boom')
       elem.touched = true;
-      count ++;
-     this.isSank()
+      count++;
+      this.isSank()
      }  
     })
   }
@@ -23,12 +23,10 @@ class Boat {
   isSank(){
     let counter =0
     const boatLength = this.boaty.length
-
     this.boaty.forEach(elem => {
       if(elem.touched === true && counter < boatLength){
         counter++;
         }
-
       if(counter === boatLength){
          const spansBoomed = document.querySelectorAll('.little-boom')
          spansBoomed.forEach(span => {
@@ -37,15 +35,15 @@ class Boat {
       }
     })
   }
-
+  
   get() {
     return this.boaty
   }
 
  randomNumber(){      
-      let i = Math.floor(Math.random()*10)
-        if(i < 10){
-          return i
+      let num = Math.floor(Math.random()*10)
+        if(num < 10){
+          return num
         }     
  }  
 
@@ -71,7 +69,7 @@ class Boat {
      this.damage = damage
    }*/
 
-   paintBoat(arrBoard,arrBoat,x,y,direction){
+   /*paintBoat(arrBoard,arrBoat,x,y,direction){
      //para comprobar que hay barco en la misma posición que se intenta pintar
        for(let i = 0 ; i < arrBoat.length; i++){
        if(arrBoard[x][y+i]==='b'){
@@ -89,7 +87,7 @@ class Boat {
          }
        }
      }
-   }
+   }*/
 
 
 

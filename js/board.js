@@ -23,5 +23,19 @@ class Board {
     }
   }
   
+  gameOver(){
+    let count = 0;
+    const spanElem = document.querySelectorAll('span')
+    console.log(spanElem)
+    spanElem.forEach(element => {
+      element.onclick = () => {
+        count ++;
+        console.log(count)
+        if(count === 10){
+          alert('Game over')
+        }
+      }  
+    });     
+  }
 
 }
