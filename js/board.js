@@ -21,6 +21,12 @@ class Board {
       //this.base.appendChild(jump)
     }
   }
+  
+  overMarker(){
+    let marker = document.createElement('h1')
+    marker.id = 'marker-title'
+    this.base.appendChild(marker)
+  }
 
   gameOver(){
     let count = 0;
@@ -28,6 +34,8 @@ class Board {
     spanElem.forEach(element => {
       element.onclick = () => {
         count ++;
+        let marker = document.getElementById('marker-title')
+        marker.innerText = 'Shots done =>' + count;
         if(count === 20){
           const over = document.getElementById('base')
           over.innerHTML='<img src="https://fotografias-neox.atresmedia.com/clipping/cmsimages02/2018/01/11/38E3D0E9-0B9E-43FD-8295-389C159F855C/58.jpg" id="img"/>';
@@ -57,9 +65,6 @@ class Board {
     const deleteButton = document.getElementById('button')
     deleteButton.remove()
   }
-
-  winGame(){
-    let win = document.getElementsByClassName('boom')
-    console.log(win.value)
-  }
+ 
 }
+

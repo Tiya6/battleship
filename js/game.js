@@ -33,20 +33,7 @@ class Game {
       {i:6, j:0, touched: false},
       {i:7, j:0, touched: false}
     ]    
-    this.boaty6 = [
-      {i:null, j:null, touched: false},
-      {i:null, j:null, touched: false},
-      {i:null, j:null, touched: false},
-      {i:null, j:null, touched: false},
-    ]
        
-    console.log(this.boaty1)
-    console.log(this.boaty2)
-    console.log(this.boaty3)
-    console.log(this.boaty4)
-    console.log(this.boaty5)
-    console.log(this.boaty6)
-    
     this.board = new Board(this.boardy)
     
     this.boat1 = new Boat(this.boaty1)
@@ -54,7 +41,6 @@ class Game {
     this.boat3 = new Boat(this.boaty3)
     this.boat4 = new Boat(this.boaty4)
     this.boat5 = new Boat(this.boaty5)
-    this.boat6 = new Boat(this.boaty6)
 
   }
   
@@ -100,14 +86,13 @@ class Game {
 
   start(){
     this.board.draw()
+    this.board.overMarker()
     this.board.gameOver()
-    this.board.winGame()
     this.boat1.draw()
     this.boat2.draw()
     this.boat3.draw()
     this.boat4.draw()
     this.boat5.draw()
-    //this.boat6.draw() 
   }
 
   

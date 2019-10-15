@@ -24,7 +24,7 @@ img{
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   width: 550px;
   height: 150px;
 }
@@ -64,4 +64,17 @@ span,div{
 
 #button{
   margin-left: 200px;
+}
+
+#marker-title{
+  color: white;
+  font-size: 22px;
+  display:flex;
+  justify-content: center;
+}
+
+#sank{  
+  color: white;
+  font-size: 18px;
+  margin-left: 220px;
 }
