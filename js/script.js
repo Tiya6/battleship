@@ -1,3 +1,3 @@
 window.onload = function() {
-  new Game().start()
+  new Game().beforeStart()
 }
