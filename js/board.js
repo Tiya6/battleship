@@ -39,13 +39,13 @@ class Board {
         if(count === 20){
           const over = document.getElementById('base')
           over.innerHTML='<img src="https://fotografias-neox.atresmedia.com/clipping/cmsimages02/2018/01/11/38E3D0E9-0B9E-43FD-8295-389C159F855C/58.jpg" id="img"/>';
-          this.btnEnd()          
+          this.btnWin()          
         }
       }  
     });
   }
 
-  btnEnd(){
+  btnWin(){
     const btnStart = document.createElement('button')
     btnStart.id = 'button'
     btnStart.classList.add('btn-danger')
@@ -55,11 +55,11 @@ class Board {
     this.base.appendChild(btnStart)
     btnStart.onclick = () => {
       new Game().beforeStart() 
-      this.deleteOver()     
+      this.deleteWin()     
     }
   }
   
-  deleteOver(){
+  deleteWin(){
     const deleteImg = document.getElementById('img')
     deleteImg.remove()
     const deleteButton = document.getElementById('button')
